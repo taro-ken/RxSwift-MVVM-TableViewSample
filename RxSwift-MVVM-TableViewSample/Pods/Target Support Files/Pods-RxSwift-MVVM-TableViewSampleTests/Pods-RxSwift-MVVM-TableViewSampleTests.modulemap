@@ -1,0 +1,6 @@
+framework module Pods_RxSwift_MVVM_TableViewSampleTests {
+  umbrella header "Pods-RxSwift-MVVM-TableViewSampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
