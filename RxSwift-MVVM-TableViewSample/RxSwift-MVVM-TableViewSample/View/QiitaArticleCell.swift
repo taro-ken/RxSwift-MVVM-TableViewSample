@@ -6,24 +6,28 @@
 //
 
 import UIKit
+import Kingfisher
 
 final class QiitaArticleCell: UITableViewCell {
     
     static var identifier = "QiitaArticleCell"
     
+    @IBOutlet weak var iconImage: UIImageView!
     @IBOutlet private weak var userNameLabel: UILabel!
-    @IBOutlet private weak var titleLabel: UILabel!
-    
+   
     
     override func prepareForReuse() {
         super.prepareForReuse()
         userNameLabel.text = nil
-        titleLabel.text = nil
+        iconImage.image = nil
+
     }
     
     func configureCell(model: QiitaArticleModel, row: Int) {
+        let url = URL(string: model.user.profileImageURL)
+        iconImage.kf.setImage(with: url)
         userNameLabel.text = model.user.id
-        titleLabel.text = model.title
+        print(model.url)
     }
     
 }
