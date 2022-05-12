@@ -15,25 +15,30 @@
                 <rect key="frame" x="0.0" y="0.0" width="415" height="131"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvm-sH-Zlf">
-                        <rect key="frame" x="37" y="20" width="358" height="29"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FC9-PC-HJ3">
-                        <rect key="frame" x="37" y="96" width="358" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Me-Eu-vN8">
+                        <rect key="frame" x="7" y="9" width="116" height="114"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jL-rI-XFh">
+                        <rect key="frame" x="142" y="25" width="245" height="30"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="1jL-rI-XFh" secondAttribute="bottom" constant="76" id="BzF-Sa-cHY"/>
+                    <constraint firstItem="0Me-Eu-vN8" firstAttribute="leading" secondItem="6If-3I-oaz" secondAttribute="leading" constant="7" id="PUV-vb-Xzi"/>
+                    <constraint firstAttribute="bottom" secondItem="0Me-Eu-vN8" secondAttribute="bottom" constant="8" id="RE2-U8-Qkc"/>
+                    <constraint firstItem="0Me-Eu-vN8" firstAttribute="top" secondItem="6If-3I-oaz" secondAttribute="top" constant="9" id="aFF-8q-9OD"/>
+                    <constraint firstAttribute="trailing" secondItem="0Me-Eu-vN8" secondAttribute="trailing" constant="292" id="b8s-sU-pzE"/>
+                    <constraint firstItem="1jL-rI-XFh" firstAttribute="top" secondItem="6If-3I-oaz" secondAttribute="top" constant="25" id="ef2-bW-j06"/>
+                    <constraint firstAttribute="trailing" secondItem="1jL-rI-XFh" secondAttribute="trailing" constant="28" id="g45-f5-sM8"/>
+                    <constraint firstItem="1jL-rI-XFh" firstAttribute="leading" secondItem="0Me-Eu-vN8" secondAttribute="trailing" constant="19" id="i6F-91-VnP"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="titleLabel" destination="FC9-PC-HJ3" id="ERr-Ui-d9q"/>
-                <outlet property="userNameLabel" destination="fvm-sH-Zlf" id="vhZ-OT-sUp"/>
+                <outlet property="iconImage" destination="0Me-Eu-vN8" id="QTX-Dy-B2K"/>
+                <outlet property="userNameLabel" destination="1jL-rI-XFh" id="pgq-m5-vQK"/>
             </connections>
             <point key="canvasLocation" x="132.60869565217394" y="310.37946428571428"/>
         </tableViewCell>
